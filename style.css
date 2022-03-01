@@ -53,17 +53,17 @@ picture {
 }
 /* Variables */
 :root {
-  /* colores */
-  /*   --clr-dark: 230 35% 7%;
-  --clr-light: 231 77% 90%;
-  --clr-white: 0 0% 100%; */
-  /* tipografia */
-  /*   --f-family: "Inter var", sans-serif;
+--f-family: 'Montserrat', sans-serif; 
+  --f-family2:'Oswald', sans-serif;
   --f-size: 16px;
-  --f-weight: 400; */
-
+  --f-weight: 400; 
 }
 /* Aplica estas variables a todos los elementos */
+* {
+  font-family: var(--f-family);
+  font-size: var(--f-size);
+  font-weight: var(--f-weight);
+}
 * {
   font-family: var(--f-family);
   font-size: var(--f-size);
@@ -72,7 +72,9 @@ picture {
 }
 /* Componentes */
 .banner {
-background-color: antiquewhite;
+padding: 100px;
+  text-align: center;
+background-color: rgb(250, 220, 123);
 }
 /* Utilidades */
 .flex {
@@ -91,10 +93,9 @@ background-color: antiquewhite;
 }
 .banner p {
   --f-size: 62px;
-  --f-weight: 600;
 }
 
 .banner h2 {
-  --f-size: 50px;
+  --f-size: 60px;
   --f-weight: 300;
 }
